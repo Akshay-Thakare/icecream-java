@@ -5,7 +5,14 @@
 icecream-java is a Java port of the [icecream](https://github.com/gruns/icecream) library for Python.
 
 ## Installation
-> Download lastest jar file from release and add to your project
+
+```
+<dependency>
+    <groupId>io.github.akshay-thakare</groupId>
+    <artifactId>icecream</artifactId>
+    <version>0.1.3</version>
+</dependency>
+```
 
 ## Usage
 

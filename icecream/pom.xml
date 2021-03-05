@@ -8,7 +8,10 @@
     <artifactId>icecream</artifactId>
     <version>0.1.2</version>
 
-    <name>icecream</name>
+    <name>icecream-java</name>
+    <description>icecream-java is a Java port of the icecream library for Python.</description>
+    <url>https://github.com/Akshay-Thakare/icecream-java</url>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,7 +36,7 @@
     </licenses>
     <developers>
         <developer>
-            <id>icecream</id>
+            <id>Akshay-Thakare</id>
             <name>Akshay Thakare</name>
             <email>akshay.thakare.india@gmail.com</email>
         </developer>

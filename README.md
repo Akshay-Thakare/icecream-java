@@ -21,7 +21,7 @@ ic()
 
 Prints
 ```
-ic | org.icecream.IceCreamTest > simplePrintTest:L24
+🍦org.icecream.IceCreamTest > simplePrintTest:L24
 ```
 
 
@@ -38,8 +38,8 @@ String concat(String a, String b) {
 
 Prints
 ```
-ic | org.icecream.IceCreamTest > withParamsTest:L25 > param_0 = 1 | param_1 = 2 | param_2 = 3
-ic | org.icecream.IceCreamTest > withMethodAsParamTest:L33 > param_0 = 12
+🍦org.icecream.IceCreamTest > withParamsTest:L25 > param_0 = 1 | param_1 = 2 | param_2 = 3
+🍦org.icecream.IceCreamTest > withMethodAsParamTest:L33 > param_0 = 12
 ```
 
 ### Configuration

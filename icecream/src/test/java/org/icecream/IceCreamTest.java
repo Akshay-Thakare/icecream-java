@@ -21,9 +21,9 @@ public class IceCreamTest {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(baos));
         ic();
-        // ic | org.icecream.IceCreamTest > simplePrintTest:L23
+        // 🍦 org.icecream.IceCreamTest > simplePrintTest:L23
         String result = baos.toString().trim();
-        assertTrue(result.contains("ic | org.icecream.IceCreamTest > simplePrintTest:L"));
+        assertTrue(result.contains("\uD83C\uDF66 org.icecream.IceCreamTest > simplePrintTest:L"));
     }
 
     @Test
@@ -32,9 +32,9 @@ public class IceCreamTest {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(baos));
         ic(1, 2, 3);
-        // "ic | org.icecream.IceCreamTest > withParamsTest:L25 > param_0 = 1 | param_1 = 2 | param_2 = 3"
+        // "🍦 org.icecream.IceCreamTest > withParamsTest:L25 > param_0 = 1 | param_1 = 2 | param_2 = 3"
         String result = baos.toString().trim();
-        assertTrue(result.contains("ic | org.icecream.IceCreamTest > withParamsTest:L"));
+        assertTrue(result.contains("\uD83C\uDF66 org.icecream.IceCreamTest > withParamsTest:L"));
         assertTrue(result.contains(" > param_0 = 1 | param_1 = 2 | param_2 = 3"));
     }
 
@@ -44,9 +44,9 @@ public class IceCreamTest {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(baos));
         ic(concat("1", "2"));
-        // ic | org.icecream.IceCreamTest > withMethodAsParamTest:L33 > param_0 = 12
+        // 🍦 org.icecream.IceCreamTest > withMethodAsParamTest:L33 > param_0 = 12
         String result = baos.toString().trim();
-        assertTrue(result.contains("ic | org.icecream.IceCreamTest > withMethodAsParamTest:L"));
+        assertTrue(result.contains("\uD83C\uDF66 org.icecream.IceCreamTest > withMethodAsParamTest:L"));
         assertTrue(result.contains(" > param_0 = 12"));
     }
 
@@ -59,7 +59,7 @@ public class IceCreamTest {
         ic();
         IceCream.includeFilename(false);
         String result = baos.toString().trim();
-        assertTrue(result.contains("ic | IceCreamTest.java > org.icecream.IceCreamTest > includeFileNameTest:L"));
+        assertTrue(result.contains("\uD83C\uDF66 IceCreamTest.java > org.icecream.IceCreamTest > includeFileNameTest:L"));
     }
 
     @Test

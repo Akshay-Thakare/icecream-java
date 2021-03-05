@@ -10,7 +10,7 @@ public class IceCream {
      * 1. Logger support was intentionally dropped to de-clutter output
      */
 
-    private static String prefix = "ic | ";
+    private static String prefix = "\uD83C\uDF66 ";
     private static boolean includeContext = true;
     private static boolean includeFilename = false;
     private static boolean includeClassName = true;
